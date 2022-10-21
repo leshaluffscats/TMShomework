@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: Hind Siliguri;
 }
-    
+
 .container {
     margin: 0 auto;
     width: 1140px;
@@ -16,6 +16,7 @@
 .container__block:nth-child(1) {
     margin-right: 25px;
 }
+
 .container__block {
     background: linear-gradient(257.26deg, #008BF0 -13.2%, #D943C9 130.95%);
     width: 555px;
@@ -55,14 +56,15 @@
 .container__left-side {
     margin-left: 35px;
 }
+
 .container__drone {
     position: absolute;
     left: 234px;
     bottom: -15.8px;
 }
+
 .container__camera {
     position: absolute;
     right: 26px;
     top: 36px;
 }
-
