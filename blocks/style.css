@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&family=Open+Sans:wght@600;700&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hind Siliguri;
+}
+    
+.container {
+    margin: 0 auto;
+    width: 1140px;
+    padding: 22px 0 15.8px 0;
+}
+
+.container__block:nth-child(1) {
+    margin-right: 25px;
+}
+.container__block {
+    background: linear-gradient(257.26deg, #008BF0 -13.2%, #D943C9 130.95%);
+    width: 555px;
+    height: 296px;
+    display: inline-block;
+    position: relative;
+    color: #F4F9FC;
+}
+
+.container__discount {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 75px;
+    line-height: 27px;
+    width: 241px;
+    opacity: 0.6;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.container__title {
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 40px;
+    width: 249px;
+    margin-bottom: 7px;
+}
+
+.container__show-now {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27px;
+    width: 76px;
+    text-transform: uppercase;
+}
+
+.container__left-side {
+    margin-left: 35px;
+}
+.container__drone {
+    position: absolute;
+    left: 234px;
+    bottom: -15.8px;
+}
+.container__camera {
+    position: absolute;
+    right: 26px;
+    top: 36px;
+}
+
