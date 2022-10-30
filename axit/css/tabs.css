@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -12,19 +8,21 @@
 
 .tabs-subcontainer {
     width: 1170px;
-    margin: calc(100vh / 2 - 500px / 2) auto 0;
+    margin: calc(100vh / 2 - 540px / 2) auto 0;
     font-family: Open Sans, sans-serif;
 }
 
+.tabs-list {
+    display: flex;
+}
+
 .tabs-list__tabs {
-    vertical-align: middle;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
     color: #333;
     height: 40px;
-    display: table-cell;
-    vertical-align: middle;
+    line-height: 40px;
     text-align: center;
 }
 
@@ -55,7 +53,6 @@
 .open-tab__left-side {
     width: 570px;
     margin: 0 30px 0 100px;
-    vertical-align: top;
 }
 
 .open-tab__title {
@@ -70,7 +67,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21, 13px;
-    margin: 0 0 27px 0;
+    margin-bottom: 27px;
     font-family: Raleway, sans-serif;
 }
 

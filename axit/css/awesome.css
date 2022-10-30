@@ -1,16 +1,18 @@
-.awesome_container {
+.awesome_subcontainer {
     width: 1170px;
-    margin: 0 169px 58px 171px;
+    margin: calc(100vh / 2 - 665px / 2) auto 0;
     font-family: Raleway, sans-serif;
+    padding-bottom: 58px;
 }
 
-.awesome_container__title {
+.awesome_container h2 {
     text-align: center;
     line-height: 150px;
     height: 150px;
     font-size: 36px;
-    margin: 50px 0 0 0;
+    margin: 50px 0 0;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .awesome_container__description--grey {
@@ -26,7 +28,7 @@
     justify-content: space-between;
 }
 
-.awesome_container__item {
+.awesome_container article {
     width: 370px;
 }
 
@@ -45,7 +47,6 @@
 }
 
 .awesome_container__description {
-    color: #000;
     font-size: 18px;
     text-align: center;
     font-weight: 400;

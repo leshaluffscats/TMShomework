@@ -1,6 +1,7 @@
 .pricing-container {
     font-family: Raleway, sans-serif;
     background: #F5F5F5;
+    padding: 50px 0;
 }
 
 .pricing-container__title {
@@ -61,7 +62,7 @@
     color: #f5f5f5;
 }
 
-.list-item {
+.pricing-container__price-info h5 {
     font-size: 18px;
     text-align: center;
     border-bottom: 2px solid #f5f5f5;
@@ -73,7 +74,7 @@
     text-transform: capitalize;
 }
 
-.list-item__opacity {
+.pricing-container__price-info h5:first-of-type{
     background: #333;
     color: rgba(255, 255, 255, 0.5);
     text-transform: none;
@@ -85,4 +86,5 @@
 
 .pricing-container__price-info:nth-of-type(2) {
     align-self: flex-start;
+    box-shadow: 0px 4px 10px 0px #333;
 }

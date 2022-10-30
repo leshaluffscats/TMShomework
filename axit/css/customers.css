@@ -1,0 +1,80 @@
+.customers-container {
+	font-family: Raleway, sans-serif;
+}
+
+.customers-subcontainer {
+	width: 1171px;
+	/* margin: 0 169px 58px 170px; */
+	margin: calc(100vh / 2 - 630px / 2) auto 0;
+	padding-bottom: 58px;
+}
+
+.container-title {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 150px;
+	height: 150px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 50px;
+}
+
+.customers-container__members {
+	margin-top: 83px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.customers-container article {
+	width: 370px;
+}
+
+.customers-container__opinion {
+	background-color: #E2E2E2;
+	height: 180px;
+	justify-content: center;
+	padding: 38px 0 37px;
+	border-radius: 10px;
+}
+
+.customers-container__reviews {
+	text-align: center;
+	font-size: 18px;
+	line-height: 21.13px;
+	font-weight: 400;
+	color: #86878B;
+}
+
+.triangle {
+	margin: 0 0 46px 70px;
+}
+
+.customers-container__people {
+	display: flex;
+}
+
+.customers-container__name-and-occupation {
+	position: relative;
+	height: 90px;
+	margin-left: 30px;
+
+}
+
+.customers-container__people img {
+	align-self: flex-start;
+}
+
+.customers-container__name {
+	font-family: Open Sans, sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32.68px;
+}
+
+.customers-container__occupation {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21.13px;
+	position: absolute;
+	bottom: 0px;
+}
