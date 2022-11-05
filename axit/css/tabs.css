@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 .tabs-subcontainer {
     width: 1170px;
     margin: calc(100vh / 2 - 540px / 2) auto 0;
-    font-family: Open Sans, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .tabs-list {
@@ -68,7 +69,7 @@
     font-size: 18px;
     line-height: 21, 13px;
     margin-bottom: 27px;
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .open-tab__btn {

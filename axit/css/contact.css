@@ -1,0 +1,85 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-subcontainer {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact-subcontainer h2 {
+    height: 150px;
+    line-height: 150px;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
+}
+
+.contact-subcontainer__separator {
+    border: 0.5px solid #EC7979;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 170px;
+}
+
+.contact-subcontainer h5 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    color: #86878B;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 89px;
+}
+
+form {
+    display: flex;
+}
+
+.contact-subcontainer input {
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    height: calc(16px + 19px);
+    width: 100%;
+}
+
+.contact-subcontainer input::placeholder,
+.contact-subcontainer textarea::placeholder {
+    font-size: 14px;
+    color: #BDBDBD;
+    font-family: 'Open Sans', sans-serif;
+    /* !продублировано потому, что на placeholder не действовало это семейство шрифта, указанное в contact-subcontainer*/
+}
+
+.contact-subcontainer__inputs {
+    width: 571px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 211px;
+}
+
+.contact-subcontainer textarea {
+    width: 569px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    height: 211px;
+    margin-left: 30px;
+    resize: none;
+}
+
+.contact-subcontainer button {
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+    width: 370px;
+    background: #EC7979;
+    height: 58px;
+    border: none;
+    margin: 50px auto;
+    display: block;
+    font-size: 18px;
+}

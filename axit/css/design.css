@@ -1,0 +1,47 @@
+.design-container {
+    background: url(../img/bgdesign.png), url(../img/background.png);
+    font-family: 'Raleway', sans-serif;
+    padding: 50px 0;
+}
+
+.design-subcontainer {
+    width: 1170px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.design-subcontainer h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+}
+
+.separator_white {
+    border-color: #fff;
+}
+
+.design-subcontainer h5 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    width: 1169px;
+    margin: 0 auto;
+}
+
+.design-subcontainer a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 370px;
+    line-height: 58px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 73px;
+}

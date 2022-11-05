@@ -1,7 +1,7 @@
 .awesome_subcontainer {
     width: 1170px;
     margin: calc(100vh / 2 - 665px / 2) auto 0;
-    font-family: Raleway, sans-serif;
+    font-family: 'Raleway', sans-serif;
     padding-bottom: 58px;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .awesome_container__article_title {
-    font-family: Open Sans, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 24px;
     margin-bottom: 8px;

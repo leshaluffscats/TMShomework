@@ -1,5 +1,5 @@
 .customers-container {
-	font-family: Raleway, sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 .customers-subcontainer {
@@ -64,7 +64,7 @@
 }
 
 .customers-container__name {
-	font-family: Open Sans, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 32.68px;

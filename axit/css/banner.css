@@ -1,0 +1,117 @@
+.banner-container {
+    font-family: 'Open Sans', sans-serif;
+    background: url(../img/bg.png), url(../img/bgimage.png);
+    background-position: bottom;
+    background-size: cover;
+    padding: 208px 0 185px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-subcontainer {
+    width: calc(470px + 30px + 670px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-subcontainer__left-side img {
+    margin: 23px 0 72.88px;
+}
+
+.banner-subcontainer__left-side h1 {
+    font-size: 48px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    line-height: 56.35px;
+    color: #fff;
+    width: 670px;
+    font-weight: 500;
+    margin-bottom: 55.12px;
+}
+
+.separator_left {
+    margin: 0 0 42px;
+}
+
+.banner-subcontainer__left-side h5 {
+    width: 270px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 21.13px;
+    margin-bottom: 42px;
+}
+
+.banner-subcontainer__left-button {
+    border: none;
+    width: 270px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    background: none;
+    line-height: 58px;
+}
+
+.banner-subcontainer__right-side {
+    background-color: #fff;
+    width: 470px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.banner-subcontainer__right-side h4 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    width: 367px;
+    height: 90px;
+    line-height: 90px;
+    margin: 0 50px 45px 53px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.banner-subcontainer__right-side span {
+    color: #EC7979;
+}
+
+.banner-subcontainer__right-side form {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-subcontainer__right-side input {
+    width: 370px;
+    padding-bottom: 19px;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    margin: 0 auto;
+    margin-bottom: 33px;
+}
+
+.banner-subcontainer__right-side input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+.banner-subcontainer__right-button {
+    width: 470px;
+    border: none;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    height: 60px;
+    line-height: 60px;
+    background: #EC7979;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 0px 10px 10px;
+}
