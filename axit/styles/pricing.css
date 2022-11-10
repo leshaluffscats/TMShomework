@@ -70,7 +70,7 @@
     line-height: 50px;
     font-weight: 400;
     color: #86878B;
-    background: #FFFFFF;
+    background: #FFF;
     text-transform: capitalize;
 }
 
@@ -82,9 +82,10 @@
 
 .pricing-container__price-info {
     align-self: flex-end;
+    transition: all 0.5s ease;
 }
 
-.pricing-container__price-info:nth-of-type(2) {
-    align-self: flex-start;
+.pricing-container__price-info:hover {
+    transform: translateY(-20px);
     box-shadow: 0px 4px 10px 0px #333;
 }

@@ -31,7 +31,7 @@
     margin: 0 auto;
 }
 
-.design-subcontainer a {
+.design-subcontainer button {
     text-decoration: none;
     color: #fff;
     display: block;
@@ -39,9 +39,23 @@
     line-height: 58px;
     margin: 0 auto;
     border: 2px solid #fff;
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 600;
     margin-top: 73px;
+    background:none;
+    cursor: pointer;
+}
+
+.design-subcontainer button:hover {
+    color:#EC7979;
+    border: 2px solid #EC7979;
+    
+}
+
+.design-subcontainer button:active {
+    color:#fff;
+    border: 2px solid #AB4949;
+    background: #AB4949; 
 }

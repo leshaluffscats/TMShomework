@@ -82,4 +82,14 @@ form {
     margin: 50px auto;
     display: block;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-subcontainer button:hover {
+    background: #AB4949;
+}
+
+.contact-subcontainer button:active {
+    background: #EC7979;
+    box-shadow:1px 1px 15px inset #AB4949 ;
 }

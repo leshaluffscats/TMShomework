@@ -52,6 +52,19 @@
     font-size: 18px;
     background: none;
     line-height: 58px;
+    cursor: pointer;
+}
+
+.banner-subcontainer__left-button:hover {
+    color:#EC7979;
+    border: 2px solid #EC7979;
+    
+}
+
+.banner-subcontainer__left-button:active {
+    color:#fff;
+    border: 2px solid #AB4949;
+    background: #AB4949; 
 }
 
 .banner-subcontainer__right-side {
@@ -79,6 +92,7 @@
 
 .banner-subcontainer__right-side span {
     color: #EC7979;
+    text-transform: uppercase;
 }
 
 .banner-subcontainer__right-side form {
@@ -114,4 +128,14 @@
     bottom: 0;
     left: 0;
     border-radius: 0px 0px 10px 10px;
+    cursor: pointer;
+}
+
+.banner-subcontainer__right-button:hover {
+    background: #AB4949;
+}
+
+.banner-subcontainer__right-button:active {
+    background: #EC7979;
+    box-shadow:1px 1px 15px inset #AB4949 ;
 }

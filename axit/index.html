@@ -5,31 +5,34 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/tabs.css">
-   <link rel="stylesheet" href="css/awesome.css">
-   <link rel="stylesheet" href="css/pricing.css">
-   <link rel="stylesheet" href="css/customers.css">
-   <link rel="stylesheet" href="css/design.css">
-   <link rel="stylesheet" href="css/header-and-footer.css">
-   <link rel="stylesheet" href="css/banner.css">
-   <link rel="stylesheet" href="css/contact.css">
-   <link rel="stylesheet" href="css/social-media.css">
+   <link rel="stylesheet" href="styles/tabs.css">
+   <link rel="stylesheet" href="styles/awesome.css">
+   <link rel="stylesheet" href="styles/pricing.css">
+   <link rel="stylesheet" href="styles/customers.css">
+   <link rel="stylesheet" href="styles/design.css">
+   <link rel="stylesheet" href="styles/header.css">
+   <link rel="stylesheet" href="styles/banner.css">
+   <link rel="stylesheet" href="styles/contact.css">
+   <link rel="stylesheet" href="styles/social-media.css">
+   <link rel="stylesheet" href="styles/footer.css">
    <title>axit</title>
 </head>
 
 <body>
    <header>
-      <div class="logo-container">
-         <img src="img/Ax.svg" alt="logo">
-         <img src="img/IT.svg" alt="logo">
-      </div>
-      <nav>
-         <button>Features</button>
-         <button>About</button>
-         <button>Pricing</button>
-         <button>Reviews</button>
-         <button>Contact</button>
-      </nav>
+      <section class="header-subcontainer">
+         <div class="logo-container">
+            <img src="img/Ax.svg" alt="logo">
+            <img src="img/IT.svg" alt="logo">
+         </div>
+         <nav>
+            <button>Features</button>
+            <button>About</button>
+            <button>Pricing</button>
+            <button>Reviews</button>
+            <button>Contact</button>
+         </nav>
+      </section>
    </header>
    <!-- !banner container -->
    <main class="banner">
@@ -48,7 +51,7 @@
                <button class="banner-subcontainer__left-button">Download</button>
             </div>
             <div class="banner-subcontainer__right-side">
-               <h4>Try Your <span>FREE</span> Trial Today</h4>
+               <h4>Try Your <span>Free</span> Trial Today</h4>
                <form action="#" onsubmit="return false">
                   <input placeholder="Name" type="text">
                   <input placeholder="Email" type="email">
@@ -60,7 +63,7 @@
       </section>
       <!-- !social media container -->
       <section class="social-media-container">
-         <div class="social-media-subcontainer">
+         <section class="social-media-subcontainer">
             <div class="social-media-container__description">
                <h4>Social Media</h4>
                <h5>
@@ -77,12 +80,12 @@
                <img src="img/github_icon.svg" alt="github">
                <img src="img/rss_icon.svg" alt="rss">
             </div>
-         </div>
+         </section>
       </section>
    </main>
    <!-- !tabs container -->
    <main class="tabs-container">
-      <div class="tabs-subcontainer">
+      <section class="tabs-subcontainer">
          <section class="tabs-list">
             <div class="tabs-list__tabs tabs-list__tabs_first">Tab 1</div>
             <div class="tabs-list__tabs tabs-list__tabs_twins">Tab 2</div>
@@ -104,7 +107,7 @@
             </section>
             <img src="img/statueofliberty.png" alt="The Statue of Liberty">
          </section>
-      </div>
+      </section>
    </main>
    <!-- !awesome container -->
    <main class="awesome_container">
@@ -154,46 +157,49 @@
    </main>
    <!--! pricing container -->
    <main class="pricing-container">
-      <h2 class="pricing-container__title">pricing options</h2>
-      <div class="separator"></div>
-      <h5 class="container-description">
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      </h5>
-      <section class="pricing-container__sections">
-         <section class="pricing-container__price-info ">
-            <h4 class="pricing-container__plan"> Basic</h4>
-            <h3 class="pricing-container__price">&#36;10</h3>
-            <h5>Free for life</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-         </section>
-         <section class="pricing-container__price-info">
-            <h4 class="pricing-container__plan"> Optima</h4>
-            <h3 class="pricing-container__price">&#36;20</h3>
-            <h5>Free for life</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-         </section>
-         <section class="pricing-container__price-info">
-            <h4 class="pricing-container__plan"> Pro</h4>
-            <h3 class="pricing-container__price">&#36;30</h3>
-            <h5>Free for life</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
-            <h5> 1 gb of space</h5>
+      <section class="pricing-subcontainer">
+         <h2 class="pricing-container__title">pricing options</h2>
+         <div class="separator"></div>
+         <h5 class="container-description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+         </h5>
+         <section class="pricing-container__sections">
+            <section class="pricing-container__price-info ">
+               <h4 class="pricing-container__plan"> Basic</h4>
+               <h3 class="pricing-container__price">&#36;10</h3>
+               <h5>Free for life</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+            </section>
+            <section class="pricing-container__price-info">
+               <h4 class="pricing-container__plan"> Optima</h4>
+               <h3 class="pricing-container__price">&#36;20</h3>
+               <h5>Free for life</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+            </section>
+            <section class="pricing-container__price-info">
+               <h4 class="pricing-container__plan"> Pro</h4>
+               <h3 class="pricing-container__price">&#36;30</h3>
+               <h5>Free for life</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+               <h5> 1 gb of space</h5>
+            </section>
          </section>
       </section>
+
    </main>
    <!-- !customers container -->
    <main class="customers-container">
@@ -268,48 +274,48 @@
    </main>
    <!-- !design container -->
    <main class="design-container">
-      <section class="design-background-opacity">
-         <section class="design-subcontainer">
-            <h2>Stylish axure design</h2>
-            <div class="separator separator_white"></div>
-            <h5>
-               Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
-            </h5>
-            <a href="#"> Download</a>
-         </section>
+      <section class="design-subcontainer">
+         <h2>Stylish axure design</h2>
+         <div class="separator separator_white"></div>
+         <h5>
+            Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!
+         </h5>
+         <button>Download</button>
       </section>
    </main>
    <!-- !contact container -->
    <main class="contact-container">
       <section class="contact-subcontainer">
-          <h2>Contact us</h2>
-          <div class="contact-subcontainer__separator"></div>
-          <h5>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </h5>
-          <form action="#" onsubmit="return false">
-              <div class="contact-subcontainer__inputs">
-                  <input placeholder="Name" type="text">
-                  <input placeholder="Email" type="email">
-                  <input placeholder="Password" type="password">
-              </div>
-              <textarea placeholder="Message"></textarea>
-          </form>
-          <button>Send message</button>
+         <h2>Contact us</h2>
+         <div class="contact-subcontainer__separator"></div>
+         <h5>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         </h5>
+         <form action="#" onsubmit="return false">
+            <div class="contact-subcontainer__inputs">
+               <input placeholder="Name" type="text">
+               <input placeholder="Email" type="email">
+               <input placeholder="Password" type="password">
+            </div>
+            <textarea placeholder="Message"></textarea>
+         </form>
+         <button>Send message</button>
       </section>
-  </main>
+   </main>
    <!-- ! footer-->
    <footer>
-      <div class="footer-container">
-         <img src="img/facebook_icon.svg" alt="facebook icon">
-         <img src="img/twitter_icon.svg" alt="twitter icon">
-         <img src="img/linkedin_icon.svg" alt=" linkedin icon">
-         <img src="img/pinterest_icon.svg" alt="pinterest icon">
-         <img src="img/instagram_icon.svg" alt="instagram icon">
-         <img src="img/github_icon.svg" alt="github icon">
-         <img src="img/rss_icon.svg" alt="rss icon">
-      </div>
-      <h5>© 2015 Axure Themes</h5>
+      <section class="footer-container">
+         <div>
+            <img src="img/facebook_icon.svg" alt="facebook icon">
+            <img src="img/twitter_icon.svg" alt="twitter icon">
+            <img src="img/linkedin_icon.svg" alt=" linkedin icon">
+            <img src="img/pinterest_icon.svg" alt="pinterest icon">
+            <img src="img/instagram_icon.svg" alt="instagram icon">
+            <img src="img/github_icon.svg" alt="github icon">
+            <img src="img/rss_icon.svg" alt="rss icon">
+         </div>
+         <h5>© 2015 Axure Themes</h5>
+      </section>
    </footer>
 </body>
 

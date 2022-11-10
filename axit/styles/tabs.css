@@ -25,6 +25,7 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
+    cursor: pointer;
 }
 
 .tabs-list__tabs_first {
@@ -59,7 +60,7 @@
 .open-tab__title {
     font-size: 30px;
     font-weight: 700;
-    margin: 0 0 27px 0;
+    margin: 0 0 27px;
     height: 124px;
     line-height: 124px;
 }
@@ -67,7 +68,7 @@
 .open-tab__desc {
     font-weight: 400;
     font-size: 18px;
-    line-height: 21, 13px;
+    line-height: 21.13px;
     margin-bottom: 27px;
     font-family: 'Raleway', sans-serif;
 }
@@ -80,4 +81,14 @@
     font-size: 18px;
     color: #FFF;
     border: none;
+    cursor: pointer;
+}
+
+.open-tab__btn:hover {
+    background: #AB4949;
+}
+
+.open-tab__btn:active {
+    background: #EC7979;
+    box-shadow:1px 1px 15px inset #AB4949 ;
 }
