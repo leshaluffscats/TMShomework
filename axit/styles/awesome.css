@@ -1,53 +1,91 @@
-.awesome_subcontainer {
-    width: 1170px;
-    margin: calc(100vh / 2 - 665px / 2) auto 0;
+.awesome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awesome-subcontainer {
+    /* width: 1170px; */
+    max-width: var(--primary-width);
     font-family: 'Raleway', sans-serif;
     padding-bottom: 58px;
 }
 
-.awesome_container h2 {
+.awesome-container h2 {
     text-align: center;
     line-height: 150px;
     height: 150px;
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: var(--h2-size);
     margin: 50px 0 0;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.awesome_container__description--grey {
+.awesome-container__description--grey {
     color: #86878B;
     text-align: center;
     margin-bottom: 71px;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: var(--h5-size);
     font-weight: 400;
 }
 
-.awesome_container__content {
+.awesome-container__content {
     display: flex;
     justify-content: space-between;
 }
 
-.awesome_container article {
-    width: 370px;
+.awesome-container article {
+    max-width: 370px;
 }
 
-.awesome_container__image {
+.awesome-container__image {
     display: block;
     margin: 0 auto;
 }
 
-.awesome_container__article_title {
+.awesome-container__article_title {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: var(--h4-size);
     margin-bottom: 8px;
     line-height: 100px;
     font-weight: 700;
 }
 
-.awesome_container__description {
-    font-size: 18px;
+.awesome-container__description {
+    /* font-size: 18px; */
+    font-size: var(--h5-size);
     text-align: center;
     font-weight: 400;
 }
+
+@media screen and (min-width:768px) and (max-width:1023.98px) {
+    .awesome-container article {
+        max-width: 317px;
+    }
+
+    .awesome-container__image {
+        width: 147px;
+    }
+
+    .awesome-container__description {
+        height: 80px;
+    }
+
+    .awesome-container__article_title {
+        height: 82px;
+        line-height: 82px;
+        margin-bottom: 9px;
+    }
+    .awesome-container h2 {
+        height: 120px;
+        line-height: 120px;
+    }
+    .awesome-container__description--grey {
+        margin-bottom: 32px;
+    }
+}
+/* !tablet done */

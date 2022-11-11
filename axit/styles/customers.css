@@ -3,14 +3,16 @@
 }
 
 .customers-subcontainer {
-	width: 1171px;
+	/* max-width: 1171px; */
+	max-width: var(--primary-width);
 	/* margin: 0 169px 58px 170px; */
 	margin: calc(100vh / 2 - 630px / 2) auto 0;
 	padding-bottom: 58px;
 }
 
 .container-title {
-	font-size: 36px;
+	/* font-size: 36px; */
+	font-size: var(--h2-size);
 	font-weight: 400;
 	line-height: 150px;
 	height: 150px;
@@ -26,7 +28,7 @@
 }
 
 .customers-container article {
-	width: 370px;
+	max-width: 370px;
 }
 
 .customers-container__opinion {
@@ -38,7 +40,8 @@
 
 .customers-container__reviews {
 	text-align: center;
-	font-size: 18px;
+	/* font-size: 18px; */
+	font-size: var(--h5-size);
 	line-height: 21.13px;
 	font-weight: 400;
 	color: #86878B;
@@ -66,14 +69,54 @@
 .customers-container__name {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 24px;
+	/* font-size: 24px; */
+	font-size: var(--h4-size);
 	line-height: 32.68px;
 }
 
 .customers-container__occupation {
 	font-weight: 400;
-	font-size: 18px;
+	/* font-size: 18px; */
+	font-size: var(--h5-size);
 	line-height: 21.13px;
 	position: absolute;
 	bottom: 0px;
 }
+
+@media screen and (min-width:768px) and (max-width:1023.98px) {
+	.customers-subcontainer {
+		margin-top: 50px;
+	}
+	.customers-container__members article {
+		max-width: 317px;
+	}
+	.customers-container__people img {
+		width: 63px;
+	}
+	.customers-container__name-and-occupation {
+		margin-left: 22px;
+		height: 61px;
+	}
+	.customers-container__name {
+		height: 36px;
+		line-height: 36px;
+	}
+	.customers-container__members {
+		margin-top: 0px;
+	}
+	.container-title {
+		height: 120px;
+		line-height: 120px;
+	}
+	.container-description {
+		margin-bottom: 32px;
+	}
+	.customers-container__opinion {
+		padding: 50px 0;
+	}
+	.customers-container__reviews {
+		height: 80px;
+		line-height: 16.44px;
+	}
+}
+/* !tablet done */

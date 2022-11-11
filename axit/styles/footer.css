@@ -1,24 +1,38 @@
 footer {
 	background-color: #000;
-	padding-bottom: 27px;
-	padding-top: 35px;
-}
-
-.footer-container {
-	width: calc(100% - 470.8px - 470px);
-	margin: 0 auto;
+	padding: 35px 0 27px;
+	display: flex;
+	justify-content: center;
 }
 
 .footer-container div {
 	display: flex;
 	justify-content: space-between;
+	width: calc(53.2px * 7 + 34.67px * 6);
 }
 
 .footer-container h5 {
 	text-align: center;
-	font-size: 18px;
+	/* font-size: 18px; */
+	font-size: var(--h5-size);
 	color: rgba(255, 255, 255, 0.5);
 	margin-top: 27.8px;
 	font-weight: 400;
 	font-family: 'Raleway', sans-serif;
 }
+
+@media screen and (min-width:768px) and (max-width:1023.98px) {
+	footer {
+		padding-bottom: 30px ;
+	}
+	.footer-container div {
+		max-width:calc(45px * 7 + 21px * 6) ;
+	}
+	.footer-container div img {
+		width: 45px;
+	}
+	.footer-container h5 {
+		margin-top: 38px;
+	}
+}
+/* !tablet done */

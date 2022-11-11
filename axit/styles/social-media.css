@@ -7,18 +7,20 @@
 }
 
 .social-media-subcontainer {
-    width: 1170px;
+    /* max-width: 1170px; */
+    max-width: var(--primary-width);
     display: flex;
     justify-content: space-between;
 }
 
 .social-media-container__description {
-    width: 470px;
+    max-width: 470px;
 }
 
 .social-media-container__description h4{
     font-weight: 700;
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: var(--h4-size);
     height: 60px;
     line-height: 60px;
     text-transform: capitalize;
@@ -28,10 +30,10 @@
 
 .social-media-container__description h5 {
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: var(--h5-size);
     font-weight: 400;
     color: #86878B;
-    width: 470px;
     line-height: 21.13px;
 }
 
@@ -48,3 +50,30 @@
     width: 70px;
     /* !увеличивает картинки под нужный размер */
 }
+
+@media screen and (min-width:768px) and (max-width:1023.98px) {
+    .social-media-container{
+        height: 104px;
+    }
+    .social-media-container__icons img {
+        width: 64px;
+    }
+    .social-media-container__description {
+        max-width: 402px;
+    }
+
+    .social-media-container__description h5 {
+        height: 32px;
+    }
+    .social-media-container__description h4 {
+        margin-bottom: 13px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .social-media-container__icons {
+        width: calc(6 * 13.33 + 64px * 7);
+        margin-left: 20px;
+    }
+
+}
+/* !tablet done */

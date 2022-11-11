@@ -6,12 +6,14 @@
 
 .contact-subcontainer {
     font-family: 'Open Sans', sans-serif;
+    max-width: var(--primary-width);
 }
 
 .contact-subcontainer h2 {
     height: 150px;
     line-height: 150px;
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: var(--h2-size);
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
@@ -19,15 +21,9 @@
     margin-top: 50px;
 }
 
-.contact-subcontainer__separator {
-    border: 0.5px solid #EC7979;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    width: 170px;
-}
-
 .contact-subcontainer h5 {
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: var(--h5-size);
     text-align: center;
     font-weight: 400;
     color: #86878B;
@@ -37,13 +33,13 @@
 
 form {
     display: flex;
+    max-width: var(--primary-width);
 }
 
 .contact-subcontainer input {
     border: none;
     border-bottom: 1px solid #BDBDBD;
     height: calc(16px + 19px);
-    width: 100%;
 }
 
 .contact-subcontainer input::placeholder,
@@ -51,7 +47,7 @@ form {
     font-size: 14px;
     color: #BDBDBD;
     font-family: 'Open Sans', sans-serif;
-    /* !продублировано потому, что на placeholder не действовало это семейство шрифта, указанное в contact-subcontainer*/
+    /* продублировано потому, что на placeholder не действовало это семейство шрифта, указанное в contact-subcontainer*/
 }
 
 .contact-subcontainer__inputs {
@@ -93,3 +89,23 @@ form {
     background: #EC7979;
     box-shadow:1px 1px 15px inset #AB4949 ;
 }
+
+@media screen and (min-width:768px) and (max-width:1023.98px) {
+    .contact-subcontainer button {
+        width: 318px;
+    }
+    .contact-container h2 {
+        line-height: 120px;
+        height: 120px;
+    }
+    .contact-container h5 {
+        margin-bottom: 72px;
+    }
+    .separator {
+        margin-bottom: 32px;
+    }
+    .contact-subcontainer {
+        width: 100%;
+    }
+}
+/* !tablet done */

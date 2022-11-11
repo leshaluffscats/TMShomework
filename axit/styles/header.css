@@ -31,4 +31,13 @@ header button {
     font-weight: 600;
     border: none;
     background: none;
+}  
+
+@media screen and (min-width:768px) and (max-width:1023.98px) {
+    .header-subcontainer {
+        width: 906.72px;
+        margin-left: 115.28px;
+        margin-right: 20px;
+    }
+
 }

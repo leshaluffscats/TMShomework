@@ -8,7 +8,8 @@
 }
 
 .tabs-subcontainer {
-    width: 1170px;
+    /* max-width: 1170px; */
+    max-width: var(--primary-width);
     margin: calc(100vh / 2 - 540px / 2) auto 0;
     font-family: 'Open Sans', sans-serif;
 }
@@ -25,7 +26,6 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    cursor: pointer;
 }
 
 .tabs-list__tabs_first {
@@ -47,18 +47,21 @@
 
 .open-tab {
     border: 1px solid #C6CBCD;
-    width: 1170px;
+    /* max-width: 1170px; */
+    max-width: var(--primary-width);
     border-top: none;
     display: flex;
+    justify-content: space-between;
 }
 
 .open-tab__left-side {
-    width: 570px;
+    max-width: 570px;
     margin: 0 30px 0 100px;
 }
 
 .open-tab__title {
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: var(--h3-size);
     font-weight: 700;
     margin: 0 0 27px;
     height: 124px;
@@ -67,7 +70,8 @@
 
 .open-tab__desc {
     font-weight: 400;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: var(--h5-size);
     line-height: 21.13px;
     margin-bottom: 27px;
     font-family: 'Raleway', sans-serif;
@@ -90,5 +94,48 @@
 
 .open-tab__btn:active {
     background: #EC7979;
-    box-shadow:1px 1px 15px inset #AB4949 ;
+    box-shadow: 1px 1px 15px inset #AB4949;
 }
+
+
+@media screen and (min-width:768px) and (max-width:1023.98px) {
+    .open-tab img {
+        width: 392.21px;
+        height: 385px;
+    }
+
+    .tabs-subcontainer {
+        margin-top: 50px;
+    }
+
+    .open-tab__title {
+        height: 89px;
+        line-height: 32.68px;
+        /* чтобы при дальнейшем сжимании экрана строка не переносилась слишком далеко из-за большого line-height */
+        margin-bottom: 38px;
+        padding-top: 38px;
+    }
+    .open-tab__desc {
+        line-height: 16.44px;
+        height: 112px;
+        margin-bottom: 38px;
+    }
+    .open-tab__btn {
+        width: 231.87px;
+    }
+    .open-tab__left-side {
+        max-width: 482.89px;
+        margin: 0 26.21px 0 84.68px;
+    }
+
+    .tabs-list__tabs_first {
+        width: 170.12px;
+    }
+    .tabs-list__tabs_twins {
+        width: 156.01px;
+    }
+    .tabs-list__tabs_empty {
+        width: 508.72px;
+    }
+}
+/* !tablet done */

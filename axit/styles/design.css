@@ -5,14 +5,16 @@
 }
 
 .design-subcontainer {
-    width: 1170px;
+    /* max-width: 1170px; */
+    max-width: var(--primary-width);
     margin: 0 auto;
     color: #fff;
 }
 
 .design-subcontainer h2 {
     text-transform: uppercase;
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: var(--h2-size);
     font-weight: 400;
     text-align: center;
     height: 150px;
@@ -24,10 +26,11 @@
 }
 
 .design-subcontainer h5 {
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: var(--h5-size);
     text-align: center;
     font-weight: 400;
-    width: 1169px;
+    /* width: 1169px; */
     margin: 0 auto;
 }
 
@@ -36,12 +39,12 @@
     color: #fff;
     display: block;
     width: 370px;
-    line-height: 58px;
+    height: 58px;
     margin: 0 auto;
     border: 2px solid #fff;
-    /* text-align: center; */
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    /* !font-size: var(--h5-size); */
     font-weight: 600;
     margin-top: 73px;
     background:none;
@@ -59,3 +62,18 @@
     border: 2px solid #AB4949;
     background: #AB4949; 
 }
+
+@media screen and (min-width:768px) and (max-width:1023.98px) {
+    .design-subcontainer button {
+        width: 318px;
+        margin-top: 32px;
+    }
+    .design-subcontainer h2 {
+        height: 120px;
+        line-height: 120px;
+    }
+    .design-subcontainer h5 {
+        line-height: 16.44px;
+    }
+}
+/* !tablet done */
