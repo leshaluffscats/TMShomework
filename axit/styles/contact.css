@@ -31,7 +31,7 @@
     margin-bottom: 89px;
 }
 
-form {
+.contact-container form {
     display: flex;
     max-width: var(--primary-width);
 }
@@ -90,7 +90,7 @@ form {
     box-shadow:1px 1px 15px inset #AB4949 ;
 }
 
-@media screen and (min-width:768px) and (max-width:1023.98px) {
+@media screen and (min-width:768px) and (max-width:1199.98px) {
     .contact-subcontainer button {
         width: 318px;
     }
@@ -109,3 +109,36 @@ form {
     }
 }
 /* !tablet done */
+
+@media screen and (min-width: 318px) and (max-width:767.98px) {
+    .contact-container form  {
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(445px + 19px);
+    }
+    .contact-subcontainer__inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-subcontainer textarea {
+        width: 100%;
+        margin: 0;
+        height: 200px;
+    }
+    .contact-container h2 {
+        line-height: 120px;
+        height: 120px;
+        margin: 0;
+    }
+    .contact-container h5 {
+        margin-bottom: 64px;
+    }
+    .contact-subcontainer button {
+        width: 288px;
+        margin: 50px 0 40px;
+        height: 50px;
+    }
+}
+
+/* !phone done */

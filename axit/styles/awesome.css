@@ -62,7 +62,7 @@
     font-weight: 400;
 }
 
-@media screen and (min-width:768px) and (max-width:1023.98px) {
+@media screen and (min-width:768px) and (max-width:1199.98px) {
     .awesome-container article {
         max-width: 317px;
     }
@@ -89,3 +89,27 @@
     }
 }
 /* !tablet done */
+
+@media screen and (min-width: 318px) and (max-width:767.98px) {
+    .awesome-container h2 {
+        margin: 0;
+        height: 120px;
+        line-height: 120px;
+    }
+    .awesome-container__description--grey {
+        margin-bottom: 50px;
+    }
+    .awesome-container__content {
+        flex-wrap: wrap;
+    }
+    .awesome-container__article_title {
+        height: 82px;
+        line-height: 82px;
+        margin-bottom: 9px;
+    }
+    .awesome-container__image {
+        width: 147px;
+    }
+}
+
+/* !phone done */

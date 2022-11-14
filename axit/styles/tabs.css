@@ -7,10 +7,13 @@
     outline: none;
 }
 
+.tabs-container {
+    padding-top: 50px;
+}
+
 .tabs-subcontainer {
-    /* max-width: 1170px; */
     max-width: var(--primary-width);
-    margin: calc(100vh / 2 - 540px / 2) auto 0;
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -47,7 +50,6 @@
 
 .open-tab {
     border: 1px solid #C6CBCD;
-    /* max-width: 1170px; */
     max-width: var(--primary-width);
     border-top: none;
     display: flex;
@@ -98,7 +100,7 @@
 }
 
 
-@media screen and (min-width:768px) and (max-width:1023.98px) {
+@media screen and (min-width:768px) and (max-width:1199.98px) {
     .open-tab img {
         width: 392.21px;
         height: 385px;
@@ -115,14 +117,17 @@
         margin-bottom: 38px;
         padding-top: 38px;
     }
+
     .open-tab__desc {
         line-height: 16.44px;
         height: 112px;
         margin-bottom: 38px;
     }
+
     .open-tab__btn {
         width: 231.87px;
     }
+
     .open-tab__left-side {
         max-width: 482.89px;
         margin: 0 26.21px 0 84.68px;
@@ -131,11 +136,63 @@
     .tabs-list__tabs_first {
         width: 170.12px;
     }
+
     .tabs-list__tabs_twins {
         width: 156.01px;
     }
+
     .tabs-list__tabs_empty {
         width: 508.72px;
     }
 }
+
 /* !tablet done */
+
+@media screen and (min-width: 318px) and (max-width:767.98px) {
+    .open-tab img {
+        display: none;
+    }
+
+    .tabs-list__tabs_empty {
+        display: none;
+    }
+
+    .open-tab__title {
+        width: 242.74px;
+        height: 112px;
+        line-height: 24.51px;
+        text-align: center;
+        margin: 0 0 29px;
+        display: flex;
+        align-items: center;
+    }
+
+    .open-tab__btn {
+        width: 242.75px;
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .open-tab__desc {
+        width: 242.74px;
+        line-height: 15.26px;
+        margin: 0 0 29px;
+        /* обнуляет отступы и добавляет один вниз */
+        text-align: center;
+    }
+
+    .open-tab__left-side {
+        margin: 0;
+    }
+
+    .open-tab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tabs-container {
+        padding: 0;
+    }
+}
+/* !phone done */

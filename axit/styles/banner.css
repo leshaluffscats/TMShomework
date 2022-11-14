@@ -43,6 +43,7 @@
 
 .separator_left {
     margin: 0 0 42px;
+    border-color:#fff ;
 }
 
 .banner-subcontainer__left-side h5 {
@@ -155,7 +156,7 @@
     box-shadow: 1px 1px 15px inset #AB4949;
 }
 
-@media screen and (min-width:768px) and (max-width:1023.98px) {
+@media screen and (min-width:768px) and (max-width:1199.98px) {
     :root {
         --separator-size: 142px;
         --h1-size: 36px;
@@ -185,7 +186,7 @@
 
     .banner-container {
         padding: 137.15px 0 106px;
-        background: url(../img/bgtablet.svg), url(../img/image-bg-tablet.svg) right bottom no-repeat;
+        background: url(../img/bg.png), url(../img/bgimage.png) left bottom no-repeat;
     }
 
     .banner-subcontainer__left-side h1 {
@@ -224,3 +225,61 @@
     }
 }
 /* !tablet done */
+
+@media screen and (min-width: 318px) and (max-width:767.98px) {
+    :root {
+        --separator-size: 134px;
+        --h1-size: 36px;
+        --h2-size: 24px;
+        --h3-size: 18px;
+        --h4-size: 18px;
+        --h5-size: 14px;
+        --primary-width: 288px;
+    }
+
+    .banner-container {
+        padding: 84px 0 50px; ;
+    }
+    .banner-subcontainer {
+        flex-wrap: wrap;
+    }
+    .banner-subcontainer__right-side {
+        width: var(--primary-width);
+        height: 381px;
+    }
+    .banner-subcontainer__right-side input {
+        width: 240px;
+    }
+    .banner-subcontainer__left-side img {
+        display: none;
+    }
+    .banner-subcontainer__left-button {
+        margin-bottom: 56px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .banner-subcontainer__left-side h1 {
+        margin-bottom: 43.88px;
+        line-height: 42.26px;
+        text-align: center;
+    }
+    .banner-subcontainer__right-side h4 {
+        font-size: 14px;
+        width: 240px;
+        margin: 0;
+    }
+    .banner-subcontainer__left-side h5 {
+        width: 288px;
+        height: 32px;
+        line-height: 16.44px;
+        text-align: center;
+    }
+    .separator_left {
+        margin: 0 auto 42px;
+    }
+    .banner-subcontainer__right-side form {
+        width: 100%;
+    }
+    
+}
+/* !phone done */

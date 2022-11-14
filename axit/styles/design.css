@@ -47,33 +47,60 @@
     /* !font-size: var(--h5-size); */
     font-weight: 600;
     margin-top: 73px;
-    background:none;
+    background: none;
     cursor: pointer;
 }
 
 .design-subcontainer button:hover {
-    color:#EC7979;
+    color: #EC7979;
     border: 2px solid #EC7979;
-    
+
 }
 
 .design-subcontainer button:active {
-    color:#fff;
+    color: #fff;
     border: 2px solid #AB4949;
-    background: #AB4949; 
+    background: #AB4949;
 }
 
-@media screen and (min-width:768px) and (max-width:1023.98px) {
+@media screen and (min-width:768px) and (max-width:1199.98px) {
     .design-subcontainer button {
         width: 318px;
         margin-top: 32px;
     }
+
     .design-subcontainer h2 {
         height: 120px;
         line-height: 120px;
     }
+
     .design-subcontainer h5 {
         line-height: 16.44px;
     }
 }
+
 /* !tablet done */
+
+@media screen and (min-width: 318px) and (max-width:767.98px) {
+    .design-subcontainer button {
+        width: 287px;
+        height: 50px;
+        margin-top: 66px;
+    }
+
+    .design-subcontainer h2 {
+        height: 120px;
+        line-height: 120px;
+    }
+
+    .design-container {
+        padding: 0 0 58px;
+        background: url(../img/design-phone.svg), url(../img/design-bg-phone.svg);
+    }
+
+    .design-container .separator {
+        margin-bottom: 16px;
+    }
+}
+
+/* !phone done */

@@ -1,4 +1,3 @@
-
 header {
     display: flex;
     background-color: #000;
@@ -14,8 +13,8 @@ header {
     /* т.к. отступ справа от элемента "contact" больше- отдельный padding до него */
 }
 
-nav {
-    font-family: 'Open Sans',sans-serif;
+.header-subcontainer nav {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
@@ -31,9 +30,13 @@ header button {
     font-weight: 600;
     border: none;
     background: none;
-}  
+}
 
-@media screen and (min-width:768px) and (max-width:1023.98px) {
+.menu-box {
+    display: none;
+}
+
+@media screen and (min-width:768px) and (max-width:1199.98px) {
     .header-subcontainer {
         width: 906.72px;
         margin-left: 115.28px;
@@ -41,3 +44,36 @@ header button {
     }
 
 }
+
+/* !tablet  */
+
+@media screen and (min-width: 318px) and (max-width:767.98px) {
+    .header-subcontainer {
+        width: 280px;
+        height: 56px;
+        padding-right: 0;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .menu-box {
+        display: block;
+        width: 55px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding: 19px 0;
+        margin-left: 150px;
+    }
+
+    .menu-box div {
+        width: 24px;
+        border: 0.5px solid #fff;
+    }
+}
+/* !phone done  */

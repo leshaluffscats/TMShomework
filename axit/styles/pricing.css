@@ -20,7 +20,6 @@
 }
 
 .separator {
-    /* width: 170px; */
     width: var(--separator-size);
     border: 0.5px solid #EC7979;
     margin: 0 auto;
@@ -28,7 +27,6 @@
 }
 
 .container-description {
-    /* font-size: 18px; */
     font-size: var(--h5-size);
     font-weight: 400;
     color: #86878B;
@@ -100,7 +98,7 @@
     box-shadow: 0px 4px 10px 0px #333;
 }
 
-@media screen and (min-width:768px) and (max-width:1023.98px) {
+@media screen and (min-width:768px) and (max-width:1199.98px) {
 
     .pricing-container__price-info {
         max-width: 317px;
@@ -135,3 +133,45 @@
     }
     /* !tablet done */
 }
+
+@media screen and (min-width: 318px) and (max-width:767.98px) {
+    .pricing-container__sections {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .pricing-container {
+        padding: 0;
+    }
+    .pricing-container__title {
+        height: 120px;
+        line-height: 120px;
+    }
+    .pricing-container .container-description {
+        margin: 0 0 24px;
+    }
+    .separator {
+        margin-bottom: 24px;
+    }
+    .pricing-container__price-info {
+        max-width: 288px;
+        margin-bottom: 27px;
+    }
+    .pricing-container__plan, .pricing-container__price, .pricing-container__price-info h5 {
+        width: 288px;
+    }
+    .pricing-container__price-info h5 {
+        height: 39px;
+        line-height: 39px;
+    }
+    .pricing-container__price {
+        height: 78.43px;
+        line-height:78.43px ;
+    }
+    .pricing-container__plan {
+        height: 47.06px;
+        line-height: 47.06px;
+    }
+
+}
+
+/* !phone done */

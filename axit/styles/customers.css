@@ -3,10 +3,8 @@
 }
 
 .customers-subcontainer {
-	/* max-width: 1171px; */
 	max-width: var(--primary-width);
-	/* margin: 0 169px 58px 170px; */
-	margin: calc(100vh / 2 - 630px / 2) auto 0;
+	margin: 0 auto;
 	padding-bottom: 58px;
 }
 
@@ -82,8 +80,11 @@
 	position: absolute;
 	bottom: 0px;
 }
+.switcher {
+	display: none;
+}
 
-@media screen and (min-width:768px) and (max-width:1023.98px) {
+@media screen and (min-width:768px) and (max-width:1199.98px) {
 	.customers-subcontainer {
 		margin-top: 50px;
 	}
@@ -120,3 +121,58 @@
 	}
 }
 /* !tablet done */
+
+@media screen and (min-width: 318px) and (max-width:767.98px) {
+	.customers-container article:nth-child(2n+1) {
+		display: none;
+	}
+	.customers-container__people img {
+		width: 57px;
+	}
+	.container-title {
+		margin-top: 0;
+		height: 120px;
+		line-height: 28.18px;
+		display: flex;
+		align-items: center;
+	}
+	.container-description {
+		margin: 0 0 24px;
+	}
+	.customers-container__reviews {
+		height: 80px;
+		line-height: 16.44px;
+	}
+	.customers-container__opinion {
+		padding: 0;
+		display: flex;
+		align-items: center;
+	}
+	.customers-container__name-and-occupation {
+		margin-left: 22px;
+		height: 61px;
+	}
+	.customers-container__name {
+		font-size: 14px;
+	}
+	.customers-container__occupation {
+		font-size: 13px;
+	}
+	.switcher {
+		display: flex;
+		justify-content: space-between;
+		width: 120px;
+		height: 9.49px;
+		margin: 32px auto 0;
+	}
+	.switcher button {
+		width: 9.49px;
+		border-radius: 50%;
+		border: 1px solid #86878B;
+	}
+	.customers-container__members {
+		margin-top: 0px;
+	}
+}
+
+/* !phone done */

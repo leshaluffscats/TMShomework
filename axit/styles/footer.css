@@ -21,7 +21,7 @@ footer {
 	font-family: 'Raleway', sans-serif;
 }
 
-@media screen and (min-width:768px) and (max-width:1023.98px) {
+@media screen and (min-width:768px) and (max-width:1199.98px) {
 	footer {
 		padding-bottom: 30px ;
 	}
@@ -36,3 +36,22 @@ footer {
 	}
 }
 /* !tablet done */
+
+@media screen and (min-width: 318px) and (max-width:767.98px) {
+	.footer-container div img {
+		width: 26px;
+	}
+	.footer-container {
+		width: 100%;
+		padding: 0 18px 0 16px;
+	}
+	.footer-container div {
+		width: 100%;
+	}
+	.footer-container h5 {
+		margin-top: 42px;
+	}
+	footer {
+		padding-bottom: 27px ;
+	}
+}
