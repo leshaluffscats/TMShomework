@@ -1,0 +1,35 @@
+@import 'var';
+
+.features {
+    font-family: 'Raleway', sans-serif;
+    .subcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.features__article {
+    max-width: 370px;
+    margin-bottom: 88.57px;
+    .features__img {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 29px;
+    }
+    .features__title{
+        font-size: $h4-size;
+        text-align: center;
+        margin-bottom: 20.43px;
+        font-weight: 900;
+        line-height: 72px;
+        height: 72px;
+    }
+    .features__description {
+        font-size: $h5-size;
+        color:#6C7279;
+        text-align: center;
+        font-weight: 400;
+        line-height: 21.13px;
+    }
+}
