@@ -1,0 +1,32 @@
+.people-container {
+  padding: 144px 0;
+  font-family: "Raleway", sans-serif;
+}
+.people-container .subcontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bio {
+  max-width: 270px;
+}
+.bio__title {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 30px 0 5px 0;
+}
+.bio__occupation {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #FF4343;
+  margin-bottom: 18px;
+}
+.bio__description {
+  color: #6C7279;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 38px;
+}/*# sourceMappingURL=people.css.map */

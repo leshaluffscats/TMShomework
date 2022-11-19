@@ -12,5 +12,8 @@
     "interior"
   ],
   "author": "leshaluffscats",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
 }

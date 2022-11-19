@@ -43,6 +43,10 @@
         &:hover {
             border-bottom: 3px solid #BABBC5;
         }
+        &:active {
+            color: #E71414;
+            border-bottom: 3px solid  #E71414;
+        }
     }
 }
 

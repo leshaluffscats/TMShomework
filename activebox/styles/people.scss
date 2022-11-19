@@ -1,0 +1,38 @@
+@import "var.scss";
+
+.people-container {
+    padding: 144px 0;
+    font-family: 'Raleway', sans-serif;
+
+    .subcontainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.bio {
+    max-width: 270px;
+
+    &__title {
+        font-size: $h4-size;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin: 30px 0 5px 0;
+    }
+
+    &__occupation {
+        font-size: $h5-size;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #FF4343;
+        margin-bottom: 18px;
+    }
+
+    &__description {
+        color: #6C7279;
+        font-size: $h5-size;
+        font-weight: 400;
+        margin-bottom: 38px;
+    }
+}

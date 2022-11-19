@@ -1,0 +1,48 @@
+.gallery-subcontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 50%);
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+.gallery-subcontainer .gallery-content {
+  position: relative;
+  overflow: hidden;
+  height: 340px;
+  cursor: pointer;
+}
+.gallery-subcontainer .gallery-content .gallery-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  background: url(../img/redbg.svg);
+  transition: all 0.2s ease;
+}
+.gallery-subcontainer .gallery-content .gallery-description:hover {
+  opacity: 1;
+}
+.gallery-subcontainer .gallery-content .gallery-description:active {
+  opacity: 1;
+  background-color: rgba(185, 12, 12, 0.8);
+}
+.gallery-subcontainer .gallery-content .gallery-description__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.gallery-subcontainer .gallery-content .gallery-description__caption {
+  font-size: 18px;
+  text-align: center;
+  text-transform: capitalize;
+}/*# sourceMappingURL=gallery.css.map */
