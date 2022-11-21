@@ -12,6 +12,7 @@
   height: 340px;
   cursor: pointer;
 }
+
 .gallery-subcontainer .gallery-content .gallery-description {
   position: absolute;
   top: 0;
@@ -24,7 +25,7 @@
   flex-direction: column;
   opacity: 0;
   background: url(../img/redbg.svg);
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 .gallery-subcontainer .gallery-content .gallery-description:hover {
   opacity: 1;

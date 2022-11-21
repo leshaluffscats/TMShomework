@@ -12,7 +12,7 @@
 }
 
 .bio {
-    max-width: 270px;
+    max-width: $person-article-width;
 
     &__title {
         font-size: $h4-size;

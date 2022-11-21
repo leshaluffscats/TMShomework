@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap");
 .header {
   background: url(../img/bgdark.svg), url(../img/bgimage.svg) 0 0/cover no-repeat;
   color: #fff;
