@@ -28,6 +28,8 @@
   border: none;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 .testimonials-container .subcontainer .testimonials-container__download-button:hover {
   background-color: #E71414;

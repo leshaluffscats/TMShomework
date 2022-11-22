@@ -8,11 +8,16 @@
 }
 .gallery-subcontainer .gallery-content {
   position: relative;
-  overflow: hidden;
   height: 340px;
   cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  height: 339px;
 }
-
+.gallery-subcontainer .gallery-content .gallery-content-image--border {
+  border-top: 1px solid #FFF;
+  border-left: 2px solid #fff;
+}
 .gallery-subcontainer .gallery-content .gallery-description {
   position: absolute;
   top: 0;

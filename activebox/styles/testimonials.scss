@@ -32,6 +32,8 @@
             border: none;
             font-family: 'Raleway', sans-serif;
             font-weight: 900;
+            cursor: pointer;
+            transition: all 0.2s ease;
 
             &:hover {
                 background-color: #E71414;

@@ -24,11 +24,11 @@
 					<img src="img/box-logo.svg" alt="logo">
 				</div>
 				<div class="menu">
-					<button class="menu__btn">Features</button>
-					<button class="menu__btn">Works</button>
-					<button class="menu__btn">Our team</button>
-					<button class="menu__btn">Testimonials</button>
-					<button class="menu__btn">Download</button>
+					<a class="menu__btn" href="#features">Features</a>
+					<a class="menu__btn" href="#works">Works</a>
+					<a class="menu__btn" href="#people">Our team</a>
+					<a class="menu__btn" href="#testimonials">Testimonials</a>
+					<a class="menu__btn" href="#footer">Download</a>
 				</div>
 			</nav>
 			<div class="separator"></div>
@@ -46,7 +46,7 @@
 		</section>
 	</header>
 	<!-- !features container -->
-	<main class="features">
+	<main class="features" id="features">
 		<section class="subcontainer">
 			<article class="features__article">
 				<img src="img/icon_1.svg" alt="" class="features__img">
@@ -98,7 +98,7 @@
 			</article>
 		</section>
 	</main>
-	<main class="gallery-container">
+	<main class="gallery-container" id="works">
 		<section class="gallery-subcontainer">
 			<div class="gallery-content">
 				<img src="img/work_1.svg" alt="" class="gallery-content__image">
@@ -115,7 +115,7 @@
 				</div>
 			</div>
 			<div class="gallery-content">
-				<img src="img/work_3.svg" alt="" class="gallery-content__image">
+				<img src="img/work_3.svg" alt="" class="gallery-content__image gallery-content-image--border">
 				<div class="gallery-description">
 					<h4 class="gallery-description__title">Project name</h4>
 					<h5 class="gallery-description__caption">User interface design</h5>
@@ -159,7 +159,7 @@
 		</section>
 	</main>
 	<!-- !people container -->
-	<main class="people-container">
+	<main class="people-container" id="people">
 		<section class="subcontainer">
 			<article class="bio">
 				<img src="img/ruth.svg" alt="Ruth's pic">
@@ -217,7 +217,7 @@
 	</main>
 
 	<!-- !testimonials container-->
-	<main class="testimonials-container">
+	<main class="testimonials-container" id="testimonials">
 		<section class="testimonials-subcontainer">
 			<div class="testimonials-subcontainer__work">
 				<img src="img/testimonials.svg" alt="a picture of conversation"
@@ -252,7 +252,7 @@
 			<button class="testimonials-container__download-button">download here</button>
 		</section>
 	</main>
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<section class="subcontainer">
 			<div class="footer__information">
 				<h5 class="footer__title">Location</h5>
@@ -284,6 +284,7 @@
 			</h5>
 		</div>
 	</footer>
+	<script src="index.js"></script>
 </body>
 
 </html>
