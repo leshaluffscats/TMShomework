@@ -10,3 +10,24 @@ for (let smoothLink of smoothLinks) {
         });
     });
 };
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+  
+    navigation: {
+      nextEl: '.testimonials-subcontainer__button',
+      prevEl: '.testimonials-subcontainer__button',
+    },
+  
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });

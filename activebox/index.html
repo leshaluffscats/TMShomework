@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="styles/people.css">
 	<link rel="stylesheet" href="styles/testimonials.css">
 	<link rel="stylesheet" href="styles/footer.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<title>Document</title>
 </head>
 
@@ -159,8 +160,8 @@
 		</section>
 	</main>
 	<!-- !people container -->
-	<main class="people-container" id="people">
-		<section class="subcontainer">
+	<main class="people-container">
+		<section class="subcontainer" id="people">
 			<article class="bio">
 				<img src="img/ruth.svg" alt="Ruth's pic">
 				<h4 class="bio__title">Ruth woods</h4>
@@ -218,19 +219,22 @@
 
 	<!-- !testimonials container-->
 	<main class="testimonials-container" id="testimonials">
-		<section class="testimonials-subcontainer">
-			<div class="testimonials-subcontainer__work">
-				<img src="img/testimonials.svg" alt="a picture of conversation"
-					class="testimonials-subcontainer__image">
-				<div class="testimonials-subcontainer__right-side">
-					<h2 class="testimonials-subcontainer__title">
-						“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean
-						eu
-						leo quam...”
-					</h2>
-					<h6 class="testimonials-subcontainer__name">
-						Susan Sims, Interaction Designer at XYZ
-					</h6>
+		<section class="testimonials-subcontainer swiper">
+			<div class="testimonials-subcontainer__work swiper-wrapper">
+				<div class="testimonials-subcontainer__work swiper-slide">
+					<img src="img/testimonials.svg" alt="a picture of conversation"
+						class="testimonials-subcontainer__image">
+					<div class="testimonials-subcontainer__right-side">
+						<h2 class="testimonials-subcontainer__title">
+							“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
+							Aenean
+							eu
+							leo quam...”
+						</h2>
+						<h6 class="testimonials-subcontainer__name">
+							Susan Sims, Interaction Designer at XYZ
+						</h6>
+					</div>
 				</div>
 			</div>
 			<div class="testimonials-subcontainer__slider">
@@ -280,11 +284,13 @@
 		<div class="footer__copyrights">
 			<h5 class="footer__text">
 				Copyright © 2015 ActiveBox. All Rights Reserved
-				Made with <span>by Kamal Chaneman</span> 
+				Made with <span>by Kamal Chaneman</span>
 			</h5>
 		</div>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="index.js"></script>
+	
 </body>
 
 </html>
