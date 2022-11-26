@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap');
-@import 'var';
+@import 'var.scss';
+
 
 .header {
     background: url(../img/bgdark.svg), url(../img/bgimage.svg) 0 0/cover no-repeat;
@@ -36,7 +37,7 @@
         width: 134px;
         height: 100%;
         color: #fff;
-        font-size: 13px;
+        font-size: $h6-size;
         font-weight: 700;
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
@@ -47,10 +48,15 @@
         &:hover {
             border-bottom: 3px solid #BABBC5;
         }
+
         &:active {
             color: #E71414;
-            border-bottom: 3px solid  #E71414;
+            border-bottom: 3px solid #E71414;
         }
+    }
+
+    .menu__burger {
+        display: none;
     }
 }
 
@@ -66,7 +72,9 @@
         text-align: center;
         line-height: 75.14px;
         margin-bottom: 31.43px;
+        text-transform: uppercase;
     }
+
     .header__description {
         font-size: 24px;
         font-weight: 400;
@@ -74,6 +82,7 @@
         line-height: 28.18px;
         margin-bottom: 82px;
     }
+
     .header__button {
         background-color: #FF4343;
         color: #fff;
@@ -90,9 +99,136 @@
         &:hover {
             background-color: #E71414;
         }
+
         &:active {
             background-color: #FF4343;
             box-shadow: 4px 4px 30px #FF4343;
+        }
+    }
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+@media screen and (max-width:1200px) {
+    $basic-width: 984px;
+    $button-width: 314px;
+    $image-width: 378px;
+    $person-article-width: 270px;
+    $h1-size: 48px;
+    $h2-size: 36px;
+    $h3-size: 30px;
+    $h4-size: 24px;
+    $h5-size: 18px;
+    $h6-size: 12px;
+
+    .header {
+        margin-bottom: 78px;
+        background: url(../img/bgdark.svg), url(../img/bgsmall.svg) 0 0/cover no-repeat;
+    }
+
+    .subcontainer {
+        max-width: $basic-width;
+    }
+}
+
+.menu {
+    .menu__btn {
+        width: 112px;
+        font-size: $h6-size;
+    }
+}
+
+.header__section {
+    padding: 157px 0 126px 0;
+
+    .header__title {
+        font-size: $h1-size;
+        line-height: 56.35px;
+        margin-bottom: 61.86px;
+    }
+
+    .header__description {
+        font-size: $h5-size;
+        line-height: 21.13px;
+        margin-bottom: 91px;
+    }
+
+    .header__button {
+        width: $button-width;
+        height: 80px;
+    }
+}
+
+
+// !!!tablet done!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+@media screen and (max-width:767.99px) {
+    $basic-width: 280px;
+    $button-width: 280px;
+    // $image-width: 378px;
+    $person-article-width: 280px;
+    $h1-size: 36px;
+    $h2-size: 24px;
+    $h3-size: 18px;
+    $h4-size: 18px;
+    $h5-size: 14px;
+    $h6-size: 12px;
+
+    .header {
+        margin-bottom: 78px;
+        background: url(../img/bgdark.svg), url(../img/bgsmall.svg) 0 0/cover no-repeat;
+    }
+
+    .subcontainer {
+        max-width: $basic-width;
+
+        .separator {
+            display: none;
+        }
+    }
+
+    .menu {
+        .menu__btn {
+            display: none;
+        }
+        .menu__burger {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 18px;
+            width: 24px;
+            margin-right: 15px;
+            transition: all 0.2s ease;
+            &:active {
+                transform: rotate(-30deg);
+            }
+            .menu__stripe {
+                border: 1px solid #fff;
+                width: 100%;
+                background: #fff;
+            }
+        }
+    }
+
+    .header__section {
+        padding: 70px 0 52px 0;
+
+        .header__title {
+            font-size: $h1-size;
+            line-height: 42.26px;
+            margin-bottom: 32px;
+        }
+
+        .header__description {
+            font-size: $h5-size;
+            line-height: 21.13px;
+            margin-bottom: 51px;
+        }
+
+        .header__button {
+            width: $button-width;
+            height: 60px;
         }
     }
 }

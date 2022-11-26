@@ -47,6 +47,9 @@
   color: #E71414;
   border-bottom: 3px solid #E71414;
 }
+.menu .menu__burger {
+  display: none;
+}
 
 .header__section {
   padding: 130px 0 120px 0;
@@ -60,6 +63,7 @@
   text-align: center;
   line-height: 75.14px;
   margin-bottom: 31.43px;
+  text-transform: uppercase;
 }
 .header__section .header__description {
   font-size: 24px;
@@ -87,4 +91,87 @@
 .header__section .header__button:active {
   background-color: #FF4343;
   box-shadow: 4px 4px 30px #FF4343;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    margin-bottom: 78px;
+    background: url(../img/bgdark.svg), url(../img/bgsmall.svg) 0 0/cover no-repeat;
+  }
+  .subcontainer {
+    max-width: 984px;
+  }
+}
+.menu .menu__btn {
+  width: 112px;
+  font-size: 13px;
+}
+
+.header__section {
+  padding: 157px 0 126px 0;
+}
+.header__section .header__title {
+  font-size: 64px;
+  line-height: 56.35px;
+  margin-bottom: 61.86px;
+}
+.header__section .header__description {
+  font-size: 18px;
+  line-height: 21.13px;
+  margin-bottom: 91px;
+}
+.header__section .header__button {
+  width: 370px;
+  height: 80px;
+}
+
+@media screen and (max-width: 767.99px) {
+  .header {
+    margin-bottom: 78px;
+    background: url(../img/bgdark.svg), url(../img/bgsmall.svg) 0 0/cover no-repeat;
+  }
+  .subcontainer {
+    max-width: 280px;
+  }
+  .subcontainer .separator {
+    display: none;
+  }
+  .menu .menu__btn {
+    display: none;
+  }
+  .menu .menu__burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 18px;
+    width: 24px;
+    margin-right: 15px;
+    transition: all 0.2s ease;
+  }
+  .menu .menu__burger:active {
+    transform: rotate(-30deg);
+  }
+  .menu .menu__burger .menu__stripe {
+    border: 1px solid #fff;
+    width: 100%;
+    background: #fff;
+  }
+  .header__section {
+    padding: 70px 0 52px 0;
+  }
+  .header__section .header__title {
+    font-size: 36px;
+    line-height: 42.26px;
+    margin-bottom: 32px;
+  }
+  .header__section .header__description {
+    font-size: 14px;
+    line-height: 21.13px;
+    margin-bottom: 51px;
+  }
+  .header__section .header__button {
+    width: 280px;
+    height: 60px;
+  }
 }/*# sourceMappingURL=header.css.map */

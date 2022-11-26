@@ -21,8 +21,16 @@
 		<section class="subcontainer">
 			<nav class="nav">
 				<div class="header__logo">
-					<img src="img/active-logo.svg" alt="logo">
-					<img src="img/box-logo.svg" alt="logo">
+					<picture>
+						<source srcset="img/ActiveBox.svg" media="(max-width: 767.99px)">
+						<img src="img/active-logo.svg" alt="logo">
+					</picture>
+					<picture>
+						<source srcset="img/ActiveBox-1.svg" media="(max-width: 767.99px)" >
+						<img src="img/box-logo.svg" alt="logo">
+					</picture>
+
+
 				</div>
 				<div class="menu">
 					<a class="menu__btn" href="#features">Features</a>
@@ -30,6 +38,11 @@
 					<a class="menu__btn" href="#people">Our team</a>
 					<a class="menu__btn" href="#testimonials">Testimonials</a>
 					<a class="menu__btn" href="#footer">Download</a>
+					<div class="menu__burger">
+						<div class="menu__stripe"></div>
+						<div class="menu__stripe"></div>
+						<div class="menu__stripe"></div>
+					</div>
 				</div>
 			</nav>
 			<div class="separator"></div>
@@ -290,7 +303,7 @@
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="index.js"></script>
-	
+
 </body>
 
 </html>
