@@ -36,3 +36,93 @@
         margin-bottom: 38px;
     }
 }
+
+@media screen and (max-width:1199.99px) {
+    $basic-width: 984px;
+    $button-width: 314px;
+    $image-width: 378px;
+    $person-article-width: 227px;
+    $h1-size: 48px;
+    $h2-size: 36px;
+    $h3-size: 30px;
+    $h4-size: 18px;
+    $h5-size: 14px;
+    $h6-size: 12px;
+
+    .people-container {
+        padding: 78px 0;
+    }
+    
+    .bio {
+        max-width: $person-article-width;
+
+        &__avatar {
+            width: 100%;
+        }
+
+        &__title {
+            font-size: $h4-size;
+            margin: 25px 0 5px 0;
+        }
+    
+        &__occupation {
+            font-size: $h5-size;
+            margin-bottom: 22px;
+        }
+    
+        &__description {
+            font-size: $h5-size;
+            margin-bottom: 39px;
+        }
+        &__link {
+            width: 32px;
+        }
+    }
+}
+// !!!!!!!tablet done
+
+@media screen and (max-width:767.99px) {
+    $basic-width: 280px;
+    $button-width: 280px;
+    $person-article-width: 280px;
+    $h1-size: 36px;
+    $h2-size: 24px;
+    $h3-size: 18px;
+    $h4-size: 18px;
+    $h5-size: 14px;
+    $h6-size: 12px;
+
+    .people-container {
+        padding: 35px 0;
+    }
+    
+    .bio {
+        max-width: $person-article-width;
+
+        &__title {
+            font-size: $h4-size;
+        }
+    
+        &__occupation {
+            font-size: $h5-size;
+            margin-bottom: 38px;
+        }
+    
+        &__description {
+            font-size: $h5-size;
+            margin-bottom: 55px;
+        }
+        &__link {
+            width: 39px;
+            margin-bottom: 50px;
+        }
+        
+    }
+}
+    .bio:nth-last-child(1) {
+        .bio__link {
+            margin-bottom: 0;
+        }
+    }
+
+    // !phone done

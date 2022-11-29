@@ -2,7 +2,7 @@
 
 .testimonials-container {
     padding-bottom: 114px;
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Raleway', sans-serif;
 
     .subcontainer {
         display: flex;
@@ -15,6 +15,7 @@
             text-transform: capitalize;
             height: 70px;
             line-height: 70px;
+            font-weight: 500;
         }
 
         .testimonials-container__caption {
@@ -23,7 +24,7 @@
         }
 
         .testimonials-container__download-button {
-            width: 369px;
+            width: $button-width;
             height: 78px;
             background-color: #FF4343;
             color: #fff;
@@ -38,6 +39,7 @@
             &:hover {
                 background-color: #E71414;
             }
+
             &:active {
                 background-color: #FF4343;
                 box-shadow: 4px 4px 30px #FF4343;
@@ -95,3 +97,157 @@
     }
 
 }
+
+@media screen and (max-width:1199.99px) {
+    $basic-width: 984px;
+    $button-width: 314px;
+    $image-width: 378px;
+    $person-article-width: 227px;
+    $h1-size: 48px;
+    $h2-size: 36px;
+    $h3-size: 24px;
+    $h4-size: 18px;
+    $h5-size: 18px;
+    $h6-size: 12px;
+
+
+    .testimonials-container {
+        padding-bottom: 78px;
+
+        .subcontainer {
+
+            .testimonials-container__start {
+                font-size: $h3-size;
+                margin-bottom: 5px;
+                height: 60px;
+                line-height: 60px;
+            }
+
+            .testimonials-container__caption {
+                margin-bottom: 45px;
+                font-size: 14px;
+            }
+
+            .testimonials-container__download-button {
+                width: $button-width;
+                font-size: $h4-size;
+            }
+        }
+
+        .testimonials-subcontainer {
+            img {
+                width: 502px;
+            }
+
+            &__right-side {
+                max-width: 330px;
+                margin-left: 88px;
+            }
+
+            &__title {
+                font-size: 24px;
+                line-height: 32.5px;
+            }
+
+            &__name {
+                font-size: $h6-size;
+                margin-top: 30px;
+            }
+
+            &__slider {
+                max-width: 156px;
+                margin: 24px auto 77px;
+            }
+
+            &__button {
+                width: 9px;
+                height: 9px;
+            }
+        }
+    }
+}
+
+// !!!!!tablet done
+
+@media screen and (max-width:767.99px) {
+    $basic-width: 280px;
+    $button-width: 280px;
+    // $image-width: 378px;
+    $person-article-width: 280px;
+    $h1-size: 36px;
+    $h2-size: 24px;
+    $h3-size: 18px;
+    $h4-size: 18px;
+    $h5-size: 14px;
+    $h6-size: 12px;
+
+    .testimonials-container {
+        padding-bottom: 45px;
+
+        .subcontainer {
+
+            .testimonials-container__start {
+                font-size: $h3-size;
+                margin-bottom: 3px;
+                height: 80px;
+                line-height: 21.13px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+            }
+
+            .testimonials-container__caption {
+                margin-bottom: 13px;
+                font-size: 13px;
+                text-align: center;
+            }
+
+            .testimonials-container__download-button {
+                width: $button-width;
+                font-size: $h4-size;
+            }
+        }
+
+        .testimonials-subcontainer {
+            &__work {
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            img {
+                width: 100%;
+            }
+
+            &__right-side {
+                margin-left: 0;
+            }
+
+            &__title {
+                font-size: 24px;
+                line-height: 32.5px;
+                text-align: center;
+                height: 206px;
+                display: flex;
+                align-items: center;
+            }
+
+            &__name {
+                font-size: $h6-size;
+                margin: 0 0 95px;
+                text-align: center;
+            }
+
+            &__slider {
+                max-width: 156px;
+                margin: 23px auto 34px;
+            }
+
+            &__button {
+                width: 9px;
+                height: 9px;
+            }
+        }
+    }
+}
+
+// !phone done

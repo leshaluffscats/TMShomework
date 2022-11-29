@@ -93,7 +93,7 @@
   box-shadow: 4px 4px 30px #FF4343;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.99px) {
   .header {
     margin-bottom: 78px;
     background: url(../img/bgdark.svg), url(../img/bgsmall.svg) 0 0/cover no-repeat;
@@ -104,24 +104,24 @@
 }
 .menu .menu__btn {
   width: 112px;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .header__section {
   padding: 157px 0 126px 0;
 }
 .header__section .header__title {
-  font-size: 64px;
+  font-size: 48px;
   line-height: 56.35px;
   margin-bottom: 61.86px;
 }
 .header__section .header__description {
-  font-size: 18px;
   line-height: 21.13px;
   margin-bottom: 91px;
+  font-size: 18px;
 }
 .header__section .header__button {
-  width: 370px;
+  width: 314px;
   height: 80px;
 }
 

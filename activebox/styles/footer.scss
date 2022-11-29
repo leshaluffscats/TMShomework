@@ -23,7 +23,7 @@
         .footer__img {
             display: flex;
             justify-content: space-between;
-            
+
             img {
                 margin-top: 20px;
             }
@@ -59,5 +59,119 @@
             }
         }
     }
+
+}
+
+
+@media screen and (max-width:1199.99px) {
+    $basic-width: 984px;
+    $button-width: 314px;
+    $image-width: 378px;
+    $person-article-width: 227px;
+    $h1-size: 48px;
+    $h2-size: 36px;
+    $h3-size: 30px;
+    $h4-size: 24px;
+    $h5-size: 18px;
+    $h6-size: 12px;
+
+    .footer {
+        padding-top: 46px;
+
+        .subcontainer {
+            margin-bottom: 43px;
+
+            .footer__title {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+
+            .footer__img {
+                justify-content: center;
+                img {
+                    margin-top: 17px;
+                    width: 33px;
+
+                    &:nth-child(2) {
+                        margin: 17px 22px 0;
+                    }
+                }
+            }
+
+            .footer__desc {
+                font-size: 14px;
+            }
+
+            .footer__information {
+                width: 33.333%;
+            }
+        }
+
+        &__copyrights {
+            height: 60px;
+
+            .footer__text {
+                font-size: 14px;
+                line-height: 16.44px;
+                max-width: 314px;
+            }
+        }
+
+    }
+
+}
+
+// !tablet done
+
+@media screen and (max-width:767.99px) {
+    $basic-width: 280px;
+    $button-width: 280px;
+    // $image-width: 378px;
+    $person-article-width: 280px;
+    $h1-size: 36px;
+    $h2-size: 24px;
+    $h3-size: 18px;
+    $h4-size: 18px;
+    $h5-size: 14px;
+    $h6-size: 12px;
+
+    .footer {
+        padding-top: 34px;
+
+        .subcontainer {
+            margin-bottom: 33px;
+            flex-direction: column;
+
+            .footer__title {
+                font-size: 14px;
+                margin-bottom: 35px;
+            }
+
+            .footer__img {
+                img {
+                    &:nth-child(2) {
+                        margin: 17px 16px 0;
+                    }
+                }
+            }
+
+            .footer__information {
+                width: 100%;
+                &:not(:last-child){
+                    margin-bottom: 69px;
+                }
+            }
+        }
+
+        &__copyrights {
+            height: 90px;
+
+            .footer__text {
+                max-width: 280px;
+            }
+        }
+
+    }
+
 
 }
