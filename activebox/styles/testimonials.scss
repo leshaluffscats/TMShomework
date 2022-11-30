@@ -1,5 +1,8 @@
 @import "var.scss";
 
+@mixin border ($bc) {
+    border: 1px solid $bc;
+}
 .testimonials-container {
     padding-bottom: 114px;
     font-family: 'Raleway', sans-serif;
@@ -85,7 +88,8 @@
 
         &__button {
             border-radius: 50%;
-            border: 1px solid #7E5D6F;
+            // border: 1px solid #7E5D6F;
+            @include border (#7E5D6F);
             width: 14px;
             height: 14px;
             cursor: pointer;

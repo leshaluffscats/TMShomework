@@ -9,8 +9,7 @@
     .gallery-content {
         position: relative;
         cursor: pointer;
-        max-width: 340px;
-        overflow: hidden;
+        max-width: 100%;
         max-height: 339px;
         justify-self: center;
 
@@ -67,8 +66,9 @@
 
     .gallery-subcontainer {
         .gallery-content {
-            max-height: 230px;
+            max-height: 100%;
             object-fit: contain;
+            max-height: 230px;
 
             img {
                 width: 100%;
@@ -104,7 +104,7 @@
 
     .gallery-subcontainer {
         .gallery-content {
-            height: 144px;
+            max-height: 144px;
             object-fit: contain;
             width: 160px;
             justify-self: center;

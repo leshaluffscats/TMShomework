@@ -9,8 +9,7 @@
 .gallery-subcontainer .gallery-content {
   position: relative;
   cursor: pointer;
-  max-width: 340px;
-  overflow: hidden;
+  max-width: 100%;
   max-height: 339px;
   justify-self: center;
 }
@@ -57,9 +56,10 @@
 
 @media screen and (max-width: 1199.99px) {
   .gallery-subcontainer .gallery-content {
-    max-height: 230px;
+    max-height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+    max-height: 230px;
   }
   .gallery-subcontainer .gallery-content img {
     width: 100%;
@@ -85,7 +85,7 @@
     grid-template-rows: repeat(4, 25%);
   }
   .gallery-subcontainer .gallery-content {
-    height: 144px;
+    max-height: 144px;
     -o-object-fit: contain;
        object-fit: contain;
     width: 160px;
